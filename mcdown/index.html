@@ -43,19 +43,8 @@
     <div class="mdui-panel-item-body">
       <p><img src="http://wangstyle.mgmcpe.cc/images/mcworldwide.png" width="100%"></p>
       <p>
-	      <video id="videoElement"></video>
-<script>
-    if (flvjs.isSupported()) {
-        var videoElement = document.getElementById('videoElement');
-        var flvPlayer = flvjs.createPlayer({
-            type: 'mp4',
-            url: 'https://www.tssgame.cn/mcworldwide.mp4'
-        });
-        flvPlayer.attachMediaElement(videoElement);
-        flvPlayer.load();
-        flvPlayer.play();
-    }
-	      </script></p>
+	      <video id="videoElement" src="https://www.tssgame.cn/mcworldwide.mp4" controls="controls"></video>
+</p>
     </div>
   </div>
   
