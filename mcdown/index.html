@@ -122,7 +122,13 @@
     <div class="mdui-dialog-content">您将会直接下载本文件。点击确认继续下载。</div>
     <div class="mdui-dialog-actions">
       <button class="mdui-btn mdui-ripple" mdui-dialog-close>取消</button>
-      <button  onclick="javascript:window.location.href='https://vip.d0.baidupan.com/file/?BWNVawAxUGFTWlNrUGVRPQM8BT1SblA9C2FVfQY3VDoGbFpsDT4HNFUtUWoDPlwzAT4EYlN+BWZVNFMhV3sDZwUrVWMALVBvUyNTY1BtUTwDPAVfUmRQNgsxVWcGa1RlBjBaOg1gB2NVJVFhAyRcYAFtBDlTNQUxVWZTYlc/AzoFI1VyAC1QOVM3UzVQNVFoA3YFMFI6UH0LPVVmBnVUMAZlWjgNZwdqVWZRNwNkXDgBbgQ3U20FPlVhUzdXMgM6BTJVZgBkUD1TMlNhUGdRaAM9BTJSP1BmC29VawY4VHsGZ1p9DTsHdVV2UXcDI1xgAWoENFM/BTZVZFNmVzwDNQU2VTAAe1BwU2xTaFBhUTYDZAUxUjhQYQs9VWUGaVRsBj5aOw1iB31VLVEhAyJcLQFmBDBTIg=='" class="mdui-btn mdui-ripple" mdui-dialog-confirm>确认</button>
+      <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>确认</button>
+	    <script>var dialog = document.getElementById('download');
+
+dialog.addEventListener('confirm.mdui.dialog', function () {
+  console.log('确认点击了');
+});
+		    </script>
     </div>
   </div>   
 	    </p>
