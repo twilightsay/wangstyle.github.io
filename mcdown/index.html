@@ -42,18 +42,30 @@
     <div class="mdui-panel-item-body">
       <p><img src="http://wangstyle.mgmcpe.cc/images/mcworldwide.png" width="100%"></p>
       <p>
-	      <script>
-    if (flvjs.isSupported()) {//检查flvjs能否正常使用
-        var videoElement = document.getElementById('videoElement');//使用id选择器找到第二步设置的dom元素
-        var flvPlayer = flvjs.createPlayer({//创建一个新的flv播放器对象
-            type: 'flv',//类型flv
-            url: 'https://www.tssgame.cn/mcworldwide.flv'  //文件位置
+	      <video id="videoElement"></video>
+<script>
+
+    if (flvjs.isSupported()) {
+
+        var videoElement = document.getElementById('videoElement');
+
+        var flvPlayer = flvjs.createPlayer({
+
+            type: 'flv',
+
+            url: 'https://www.tssgame.cn/mcworldwide.flv'
+
         });
-        flvPlayer.attachMediaElement(videoElement);//将flv视频装载进video元素内
-        flvPlayer.load();//载入视频
+
+        flvPlayer.attachMediaElement(videoElement);
+
+        flvPlayer.load();
+
+        flvPlayer.play();
+
     }
-</script>
-	      <video id="videoElement" controls></video></p>
+
+	      </script></p>
     </div>
   </div>
   
